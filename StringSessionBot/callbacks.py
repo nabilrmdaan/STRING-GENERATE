@@ -43,7 +43,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "Silakan pilih string yang Anda inginkan untuk menghasilkan sesi string",
+            "Silakan pilih string yang Anda inginkan untuk menghasilkan string session",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
                 InlineKeyboardButton("Telethon", callback_data="telethon")
